@@ -1,0 +1,18 @@
+{
+  "id": "orenda-barcode-reader",
+  "name": "Orenda Barcode Reader",
+  "description": "Read an approved USB HID or serial barcode scanner and show each scan immediately.",
+  "category": "utilities",
+  "runtime": "compose",
+  "metadata": {
+    "orenda": {
+      "sdkVersion": "1",
+      "containerPort": 3101,
+      "healthPath": "/health",
+      "ui": { "enabled": true },
+      "capabilities": ["usb:read"],
+      "minPlatformVersion": "0.2.45"
+    }
+  },
+  "versions": []
+}

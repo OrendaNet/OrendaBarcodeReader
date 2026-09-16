@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#082f2a"><title>Orenda Barcode Reader</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><div class="brand"><span class="mark" aria-hidden="true"></span><span>Orenda</span></div><span class="product">Barcode Reader</span></header>
+<main><section class="intro"><div><p class="eyebrow">USB scanner</p><h1>Ready for the next scan</h1><p class="subhead">Scan a barcode and it will appear here immediately.</p></div><div class="status" id="status" role="status"><span class="status-dot"></span><span id="statusText">Connecting…</span></div></section>
+<section class="latest" aria-labelledby="latestTitle"><div class="section-head"><h2 id="latestTitle">Latest scan</h2><time id="latestTime"></time></div><output id="latestValue" class="barcode waiting" aria-live="polite">Waiting for a barcode</output></section>
+<section class="reader-card"><label for="device">Barcode reader</label><select id="device"><option value="">Looking for approved readers…</option></select><p id="readerHelp">Only USB devices approved when this app was installed are available.</p></section>
+<section class="history" aria-labelledby="historyTitle"><div class="section-head"><div><p class="eyebrow">This session</p><h2 id="historyTitle">Recent scans</h2></div><button id="clear" type="button">Clear</button></div><ol id="scans" class="scan-list"><li class="empty">No scans yet</li></ol></section></main>
+<script src="app.js" defer></script></body></html>

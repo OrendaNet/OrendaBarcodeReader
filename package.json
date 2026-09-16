@@ -1,0 +1,15 @@
+{
+  "name": "orenda-barcode-reader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read approved USB barcode scanners on OrendaBox",
+  "license": "MIT",
+  "repository": "github:OrendaNet/OrendaBarcodeReader",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node sdk/dev.js",
+    "check": "node --check server.js && node --check barcode.js && node --check public/app.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}
